@@ -10,10 +10,15 @@
 public class Address {
     public int streetNumber=0;
     public String street = null;
-    public String City = null;
-    public String Province = "ON";
+    public String city = null;
+    public String province = "ON";
     public String postCode = null;
     public String country = "CA";
+
+    @Override
+    public String toString() {
+        return "Address{" + "streetNumber=" + streetNumber + ", street=" + street + ", city=" + city + ", province=" + province + ", postCode=" + postCode + ", country=" + country + '}';
+    }
     
     
 }
