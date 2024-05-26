@@ -22,7 +22,7 @@ public class Human {
     }
 
     void printInfo() {
-        System.out.println(this.name+','+this.age+','+this.gender+','+this.address+','+this.citizen);
+        System.out.println(this.name+','+this.age+','+this.gender+','+this.citizen);
     }
 
     public void setAge(int age) {
@@ -55,6 +55,11 @@ public class Human {
 
     public String getCitizen() {
         return citizen;
+    }
+
+    @Override
+    public String toString() {
+        return name+","+age+","+gender+","+citizen;
     }
     
     
